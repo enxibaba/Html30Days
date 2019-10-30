@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .main {
+        background-color: antiquewhite;
+        display: flex;
+        width: 400px;
+        height: 200px;
+        flex-direction: row;
+        margin-bottom: 10px;
+      }
+      .space-around {
+        /*  主轴上对齐方式 */
+        justify-content: space-around;
+        /* 纵轴上的对齐方式 */
+        align-items: flex-end;
+
+        flex-wrap: wrap;
+        /* 【多行】 ？ 纵轴的对齐方式 */
+        align-content: space-evenly;
+      }
+      .center {
+        justify-content: center;
+      }
+      .end {
+        justify-content: flex-end;
+      }
+
+      .item:nth-child(1) {
+        background-color: red;
+        height: 20px;
+      }
+
+      .item:nth-child(2) {
+        background-color: yellow;
+        height: 30px;
+      }
+
+      .item:nth-child(3) {
+        background-color: green;
+        height: 40px;
+      }
+
+      .item:nth-child(4) {
+        background-color: red;
+        height: 20px;
+      }
+
+      .item:nth-child(5) {
+        background-color: yellow;
+        height: 30px;
+      }
+
+      .item:nth-child(6) {
+        background-color: green;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main space-around">
+      <div class="item">前端小课</div>
+      <div class="item">FlexBox布局</div>
+      <div class="item">👸🏻👸🏻</div>
+      <div class="item">前端小课前端小课</div>
+      <div class="item">FlexBox布局前端小课</div>
+      <div class="item">👸🏻👸🏻前端小课</div>
+    </div>
+    <div class="main center">
+      <div class="item">前端小课</div>
+      <div class="item">FlexBox布局</div>
+      <div class="item">👸🏻👸🏻</div>
+    </div>
+    <div class="main end">
+      <div class="item">前端小课</div>
+      <div class="item">FlexBox布局</div>
+      <div class="item">👸🏻👸🏻</div>
+    </div>
+  </body>
+</html>
